@@ -31,6 +31,8 @@ export function EmailAutocomplete({
 
   const debounce = useDebounce(inputValue, 300);
 
+  //fetching the customer emails
+
   useEffect(() => {
     const fetchSuggestions = async () => {
       if (debounce) {
@@ -77,6 +79,8 @@ export function EmailAutocomplete({
   };
 
   return (
+    //displaying the loaded emails
+
     <Popover open={isPopoverOpen} onOpenChange={setIsPopoverOpen}>
       <PopoverTrigger asChild>
         <div

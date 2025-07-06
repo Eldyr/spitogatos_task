@@ -66,6 +66,8 @@ export default function EmailComposer() {
     }, 1000);
   };
 
+  //fetching the data from the api
+
   const handleLoadAll = async () => {
     setIsLoadingAll(true);
     try {
@@ -90,6 +92,8 @@ export default function EmailComposer() {
   };
 
   return (
+    //a pop up form to sending the mail
+
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
         <Button size="lg" variant="default" className="cursor-pointer">
